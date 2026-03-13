@@ -2,23 +2,28 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const repository = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'cosmic-cloud';
+const repositoryOwner = process.env.GITHUB_REPOSITORY_OWNER ?? 'abour';
+
 // https://astro.build/config
 export default defineConfig({
+	site: `https://${repositoryOwner}.github.io`,
+	base: process.env.GITHUB_ACTIONS ? `/${repository}` : '/',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'EasyDonjon',
+			description: 'Stratégies ultra-rapides des donjons World of Warcraft.',
+			disable404Route: true,
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com' }],
+			components: {
+				ThemeProvider: './src/components/ThemeProvider.astro',
+			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Donjons',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Burning Crusade', autogenerate: { directory: 'donjons/bc' } },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),

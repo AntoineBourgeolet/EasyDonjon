@@ -1,40 +1,59 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
-hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+title: EasyDonjon
+template: splash
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, Card } from '@astrojs/starlight/components';
 
-## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+## Donjons de la Saison
+
+<CardGrid>
+  <a href="./donjons/midnight/s1/antre-nalorakk" style="text-decoration: none;">
+    <Card title="Antre de Nalorakk">
+      ![Antre de Nalorakk](../../assets/antre-nalorakk.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/arene-cicatrice" style="text-decoration: none;">
+    <Card title="Arène de la cicatrice du vide">
+      ![Arène de la cicatrice du vide](../../assets/arene-cicatrice.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/caverne-maisara" style="text-decoration: none;">
+    <Card title="Caverne de Maisara">
+      ![Caverne de Maisara](../../assets/caverne-maisara.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/fleche-coursevent" style="text-decoration: none;">
+    <Card title="Flèche de Coursevent">
+      ![Flèche de Coursevent](../../assets/fleche-coursevent.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/val-aveuglant" style="text-decoration: none;">
+    <Card title="Le val aveuglant">
+      ![Le val aveuglant](../../assets/val-aveuglant.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/allee-meurtre" style="text-decoration: none;">
+    <Card title="L'allée du meurtre">
+      ![L'allée du meurtre](../../assets/allee-meurtre.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/point-nexus" style="text-decoration: none;">
+    <Card title="Point-Nexus Xenas">
+      ![L'allée du meurtre](../../assets/point-nexus.png)
+    </Card>
+  </a>
+
+  <a href="./donjons/midnight/s1/magister-terrace" style="text-decoration: none;">
+    <Card title="Terrasse du Magistère">
+      ![Terrasse du Magistère](../../assets/magister_terrace.png)
+    </Card>
+  </a>
 </CardGrid>

@@ -1,0 +1,51 @@
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-grid > a {
+  display: block;
+  height: 100%;
+}
+
+.card-grid > a .card {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.card-grid > a .card .title {
+  font-size: clamp(0.95rem, 0.8rem + 0.35vw, 1.1rem);
+  white-space: nowrap;
+}
+
+.card-grid > a .card .title span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-grid > a .card .body {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.card-grid > a .card .body > p {
+  width: 100%;
+  margin: 0;
+}
+
+.card-grid > a .card .body img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (min-width: 50rem) {
+  .card-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
