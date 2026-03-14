@@ -2,44 +2,99 @@
 title: La Terrasse du Magistère
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Badge, Code, Card, CardGrid } from '@astrojs/starlight/components';
+
+
+## Boss
+<Tabs>
+  <TabItem label="Assemblage arcanique" icon="puzzle">
+    :::tip[Placement]
+    🧹 Clean un côté minimum. Attention au bump d'**Expulsion Arcanique**
+    :::
+    :::danger[Orbes d'énergie]
+    🟣 Intercepter ! Rotation entre joueurs (DoT cumulable).
+    :::
+    :::caution[Entraves]
+    💠Dispell (sinon Dégâts + immobilisation) *ASAP*.
+    :::
+    :::caution[ Alerte Tank]
+    🛡️ Prévoyez un **gros CD défensif** sur le **Heurtoir**.
+    :::
+  </TabItem>
+
+  <TabItem label="Séranel Cinglesoleil" icon="sun">
+  :::note[ Zone de suppression]
+  🧹 Crée une zone qui réduit au silence. La traverser neutralise la marque.
+  :::
+  :::caution[ Marque runique]
+  🧬 Gros DOT dispellable uniquement en passant dans la zone de suppression.
+  :::
+  :::danger[ Vague de silence]
+  🌊 Courir dans la zone de suppression au moment de la vague, sinon **silence garanti (8s)**.
+  :::
+  :::caution[ Protection accélérante]
+  🛡️ Gardez vos CDs pour cette compétence.
+  :::
+  </TabItem>
+
+  <TabItem label="Géméllus" icon="moon">
+    :::note[Split]
+    ✳️ Se démultiplie à 100% et 50% d'énergie.
+    :::
+    :::tip[Placement]
+    🛡️ Placer le boss le plus proche possible des *adds* (leurs vies sont liées).
+    :::
+    :::caution[Bouclier]
+    🪼 Traverser la méduse liée pour retirer le bouclier du boss.
+    :::
+    :::danger[ Emprise astrale]
+    🌀 **Ecartez-vous immédiatement**. Dégâts létaux !
+    :::
+  </TabItem>
+
+  <TabItem label="Dégentrius" icon="warning">
+    :::caution[Zone ciblée]
+    ⚠️Zone de dégâts sur un joueur — n'y restez pas.
+    :::
+    :::caution[Fil]
+    🪢Ne traversez pas les fils partant du boss (il est possible de les contourner
+    :::
+    :::danger[Entropie dévorante]
+    🟣Des boules partent de chaque joueur — évitez le contact à tout prix.
+    :::
+    :::danger[Essence du vide instable]
+    💥Tire vers 4 emplacements. Si ce n'est pas intercepté : **GROS DOT** sur le groupe.
+    :::
+  </TabItem>
+</Tabs>
+
+## Trashs (packs)
+<Tabs>
+  <TabItem label="Interuption">
+    | Ennemi | Sort |
+    | --- | --- |
+    | Arcane Magister | Polymorph | 
+    | Blazing pyromancer | Pyroblast |
+    | Void terror | Terror wave | 
+  </TabItem>
+  <TabItem label="Dispell">
+    | Ennemi | Sort |
+    | --- | --- |
+    | Arcane Magister | Polymorph | 
+    | Void terror | Consuming void | 
+    | Lightward healer | Holy Fire |
+  </TabItem>
+</Tabs>
 
 
 ## Infos bonus
-
-:::note[Way]
-/way #2424 63.4 15.3 La Terrasse du Magistère
-:::
-
-:::tip[Bonus]
+<Tabs>
+  <TabItem label="Localisation">
+    <Code code="/way #2424 63.4 15.3 La Terrasse du Magistère" lang="Tomtom" title="Tomtom" mark="La Terrasse du Magistère" />
+</TabItem>
+  <TabItem label="Bonus">
+:::tip[Buff]
 Il y a un tome arcanique clicable a l'entrée qui boost la hate pendant 30 min.
 :::
-
-
-## Trashs (packs)
-<CardGrid>
-  <Card title="Interuption" icon="close">
-    | Ennemi | Sort |
-| --- | --- |
-| Arcane Magister | Polymorph | 
-| Blazing pyromancer | Pyroblast |
-| Void terror | Terror wave | 
-  </Card>
-  <Card title="Dispell" icon="blueSky">
-    | Ennemi | Sort |
-| --- | --- |
-| Arcane Magister | Polymorph | 
-| Void terror | Consuming void | 
-| Lightward healer | Holy Fire |
-  </Card>
-</CardGrid> 
-
-
-
-
-## Boss 1 — Assemblage arcanique
-
-* 🧹 **Placement :** Clean un côté minimum. Attention au bump d'**Expulsion Arcanique**.
-* 🔮 **Orbes d'énergie :** Intercepter les ! **Rotation** entre joueur obligatoire (DoT cumulable).
-* 💠 **Dispel :** **Entraves** (Dégâts + Immobilisation) à clean ASAP.
-* 🛡️ **Tank :** Gros CD sur le **Heurtoir**.
+</TabItem>
+</Tabs>
