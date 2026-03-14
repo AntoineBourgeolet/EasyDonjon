@@ -3,6 +3,20 @@
   gap: 1.5rem;
 }
 
+:root {
+  color-scheme: dark;
+}
+
+.header {
+  backdrop-filter: blur(8px);
+  background: color-mix(in srgb, var(--sl-color-bg-nav) 88%, black 12%);
+  border-bottom: 1px solid color-mix(in srgb, var(--sl-color-gray-5) 70%, transparent);
+}
+
+.site-title img {
+  border-radius: 0.45rem;
+}
+
 .card-grid > a {
   display: block;
   height: 100%;
@@ -11,6 +25,8 @@
 .card-grid > a .card {
   box-sizing: border-box;
   height: 100%;
+  border: 1px solid color-mix(in srgb, var(--sl-color-gray-5) 55%, transparent);
+  background: color-mix(in srgb, var(--sl-color-bg) 92%, black 8%);
 }
 
 .card-grid > a .card .title {
@@ -102,6 +118,10 @@
 
 .dungeon-guide strong {
   color: var(--sl-color-white);
+}
+
+.sl-markdown-content .starlight-aside {
+  border-radius: 0.8rem;
 }
 
 @media (max-width: 50rem) {

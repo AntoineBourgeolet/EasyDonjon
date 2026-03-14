@@ -13,6 +13,10 @@ export default defineConfig({
 		starlight({
 			title: 'EasyDonjon',
 			description: 'Stratégies ultra-rapides des donjons World of Warcraft.',
+			logo: {
+				src: './src/assets/logo-easy-donjon.png',
+				alt: 'Logo EasyDonjon',
+			},
 			disable404Route: true,
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com' }],
 			components: {
