@@ -22,7 +22,7 @@ export default defineConfig({
 				{
 					label: 'Donjons',
 					items: [
-						{ label: 'Burning Crusade', autogenerate: { directory: 'donjons/bc' } },
+						{ label: 'Midnight Saison 1', autogenerate: { directory: 'donjons/midnight/s1' } },
 					],
 				},
 			],

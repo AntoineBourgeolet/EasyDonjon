@@ -44,6 +44,76 @@
   object-position: center;
 }
 
+.dungeon-guide {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.dungeon-guide h2 {
+  margin-bottom: 0.75rem;
+}
+
+.dungeon-guide__highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.9rem;
+}
+
+.dungeon-guide__card {
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--sl-color-gray-3) 75%, transparent);
+  border-radius: 0.9rem;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--sl-color-bg) 88%, white 12%), var(--sl-color-bg)),
+    var(--sl-color-bg);
+}
+
+.dungeon-guide__card h3 {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.dungeon-guide__card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.dungeon-guide__card li + li {
+  margin-top: 0.35rem;
+}
+
+.dungeon-guide table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.dungeon-guide th {
+  white-space: nowrap;
+}
+
+.dungeon-guide td,
+.dungeon-guide th {
+  vertical-align: top;
+}
+
+.dungeon-guide strong {
+  color: var(--sl-color-white);
+}
+
+@media (max-width: 50rem) {
+  .dungeon-guide {
+    gap: 1.25rem;
+  }
+
+  .dungeon-guide table {
+    font-size: 0.9rem;
+  }
+}
+
 @media (min-width: 50rem) {
   .card-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
