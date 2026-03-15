@@ -26,7 +26,7 @@ export default defineConfig({
 				{
 					label: 'Donjons',
 					items: [
-						{ label: 'Midnight Saison 1', autogenerate: { directory: 'donjons/midnight/s1' } },
+						{ label: 'Midnight Saison 0', autogenerate: { directory: 'donjons/midnight/s0' } },
 					],
 				},
 			],

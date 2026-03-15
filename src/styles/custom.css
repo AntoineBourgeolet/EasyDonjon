@@ -7,6 +7,16 @@
   color-scheme: dark;
 }
 
+html[data-has-sidebar][data-has-toc] {
+  --sl-content-width: 67.5rem;
+}
+
+@media (min-width: 72rem) {
+  .right-sidebar-container {
+    display: none;
+  }
+}
+
 .header {
   backdrop-filter: blur(8px);
   background: color-mix(in srgb, var(--sl-color-bg-nav) 88%, black 12%);
